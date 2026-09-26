@@ -1,3 +1,5 @@
 <Solution>
   <Project Path="DVLD Project/DVLD Project.csproj" />
+  <Project Path="DVLD.Business/DVLD.Business.csproj" />
+  <Project Path="DVLD.DataAccess/DVLD.DataAccess.csproj" />
 </Solution>
