@@ -618,7 +618,6 @@
             this.Controls.Add(this.panel5);
             this.Name = "ctrlPersonCard";
             this.Size = new System.Drawing.Size(1427, 446);
-            this.Load += new System.EventHandler(this.ctrlPersonCard_Load);
             this.panel3.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
