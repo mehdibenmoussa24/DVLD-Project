@@ -63,6 +63,16 @@ namespace DVLD_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Active {
+            get {
+                object obj = ResourceManager.GetObject("Active", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap add {
             get {
                 object obj = ResourceManager.GetObject("add", resourceCulture);
@@ -186,6 +196,16 @@ namespace DVLD_Project.Properties {
         internal static System.Drawing.Bitmap ID {
             get {
                 object obj = ResourceManager.GetObject("ID", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LoginInformation {
+            get {
+                object obj = ResourceManager.GetObject("LoginInformation", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
