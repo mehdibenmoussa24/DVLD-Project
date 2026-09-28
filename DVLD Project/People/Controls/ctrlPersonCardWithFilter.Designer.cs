@@ -34,15 +34,15 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.pnlFilters = new System.Windows.Forms.Panel();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.txtFilterValue = new System.Windows.Forms.TextBox();
             this.cbFilterBy = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.pnlFilters.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -82,6 +82,30 @@
             this.pnlFilters.Name = "pnlFilters";
             this.pnlFilters.Size = new System.Drawing.Size(1402, 123);
             this.pnlFilters.TabIndex = 2;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
+            this.btnAdd.ImageIndex = 1;
+            this.btnAdd.ImageList = this.imageList1;
+            this.btnAdd.Location = new System.Drawing.Point(658, 71);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(38, 38);
+            this.btnAdd.TabIndex = 19;
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
+            this.btnSearch.ImageIndex = 0;
+            this.btnSearch.ImageList = this.imageList1;
+            this.btnSearch.Location = new System.Drawing.Point(604, 70);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(38, 38);
+            this.btnSearch.TabIndex = 18;
+            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // txtFilterValue
             // 
@@ -137,6 +161,17 @@
             this.panel3.Size = new System.Drawing.Size(1353, 10);
             this.panel3.TabIndex = 3;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::DVLD_Project.Properties.Resources.Filter;
+            this.pictureBox2.Location = new System.Drawing.Point(24, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(29, 31);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 12;
+            this.pictureBox2.TabStop = false;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -148,41 +183,6 @@
             this.label2.Size = new System.Drawing.Size(110, 29);
             this.label2.TabIndex = 16;
             this.label2.Text = "Filter By";
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
-            this.btnAdd.ImageIndex = 1;
-            this.btnAdd.ImageList = this.imageList1;
-            this.btnAdd.Location = new System.Drawing.Point(658, 71);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(38, 38);
-            this.btnAdd.TabIndex = 19;
-            this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
-            this.btnSearch.ImageIndex = 0;
-            this.btnSearch.ImageList = this.imageList1;
-            this.btnSearch.Location = new System.Drawing.Point(604, 70);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(38, 38);
-            this.btnSearch.TabIndex = 18;
-            this.btnSearch.UseVisualStyleBackColor = false;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::DVLD_Project.Properties.Resources.Filter;
-            this.pictureBox2.Location = new System.Drawing.Point(24, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(29, 31);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 12;
-            this.pictureBox2.TabStop = false;
             // 
             // ctrlPersonCardWithFilter
             // 

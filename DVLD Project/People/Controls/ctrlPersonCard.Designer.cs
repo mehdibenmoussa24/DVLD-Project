@@ -549,7 +549,7 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Honeydew;
-            this.pictureBox4.Image = typeof(DVLD_Project.Properties.Resources).Name;
+            this.pictureBox4.Image = global::DVLD_Project.Properties.Resources.Person_ico;
             this.pictureBox4.Location = new System.Drawing.Point(36, 114);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(33, 28);
