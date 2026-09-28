@@ -119,6 +119,7 @@
             // 
             // cbFilterBy
             // 
+            this.cbFilterBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbFilterBy.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbFilterBy.FormattingEnabled = true;
             this.cbFilterBy.Items.AddRange(new object[] {
