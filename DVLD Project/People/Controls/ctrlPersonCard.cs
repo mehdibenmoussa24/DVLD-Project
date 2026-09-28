@@ -98,13 +98,9 @@ namespace DVLD_Project
         }
         private void btnEditPersonInfo_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Comming Soon", "Soon", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+            Form frm = new frmAddUpdatePerson(_Person.PersonID);
+            frm.ShowDialog();
         }
 
-        private void ctrlPersonCard_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

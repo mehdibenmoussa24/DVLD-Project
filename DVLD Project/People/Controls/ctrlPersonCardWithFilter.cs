@@ -134,7 +134,9 @@ namespace DVLD_Project
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Comming Soon", "Soon", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            frmAddUpdatePerson frm = new frmAddUpdatePerson();
+            frm.DataBack += DataBackEvent; // Subscribe to the event
+            frm.ShowDialog();
         }
 
         private void DataBackEvent(object sender, int PersonID)

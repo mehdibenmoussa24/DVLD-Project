@@ -167,7 +167,9 @@ namespace DVLD_Project
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Comming Soon", "Soon", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Form frm = new frmAddUpdatePerson();
+            frm.ShowDialog();
+            _RefreshPeopleList();
         }
 
         private void dgvPeople_DoubleClick(object sender, EventArgs e)
@@ -184,12 +186,18 @@ namespace DVLD_Project
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Comming Soon", "Soon", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Form frm = new frmAddUpdatePerson();
+            frm.ShowDialog();
+
+            _RefreshPeopleList();
         }
 
         private void editToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Comming Soon", "Soon", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Form frm = new frmAddUpdatePerson((int)dgvPeople.CurrentRow.Cells[0].Value);
+            frm.ShowDialog();
+
+            _RefreshPeopleList();
         }
 
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
