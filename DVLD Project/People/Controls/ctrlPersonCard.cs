@@ -101,5 +101,10 @@ namespace DVLD_Project
             MessageBox.Show("Comming Soon", "Soon", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
+
+        private void ctrlPersonCard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
