@@ -277,5 +277,8 @@
   <ItemGroup>
     <None Include="Resources\UserForm.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users-ico.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -95,6 +95,12 @@ namespace DVLD_Project
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
+            if(string.IsNullOrEmpty(txtFilterValue.Text))
+            {
+                //Here we dont continue becuase the form is not valid
+                MessageBox.Show("Some fileds are not valide!, put the mouse over the red icon(s) to see the erro", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             if (!this.ValidateChildren())
             {
                 //Here we dont continue becuase the form is not valid
@@ -122,7 +128,6 @@ namespace DVLD_Project
         {
             if (string.IsNullOrEmpty(txtFilterValue.Text.Trim()))
             {
-                e.Cancel = true;
                 errorProvider1.SetError(txtFilterValue, "This field is required!");
             }
             else

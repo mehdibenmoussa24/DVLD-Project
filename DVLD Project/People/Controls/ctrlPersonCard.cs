@@ -45,6 +45,7 @@ namespace DVLD_Project
         private void _FillPersonInfo()
         {
             lblPersonID.Text = _Person.PersonID.ToString();
+            _PersonID = _Person.PersonID;
             lblName.Text = _Person.FullName.ToString();
             lblNationalNo.Text = _Person.NationalNo.ToString();
             lblGender.Text = _Person.Gender == 0 ? "Male" : "Female";
@@ -98,9 +99,12 @@ namespace DVLD_Project
         }
         private void btnEditPersonInfo_Click(object sender, EventArgs e)
         {
-            Form frm = new frmAddUpdatePerson(_Person.PersonID);
-            frm.ShowDialog();
+            if (_Person != null)
+            {
+                Form frm = new frmAddUpdatePerson(_Person.PersonID);
+                frm.ShowDialog();
+            }
         }
-
+         
     }
 }
