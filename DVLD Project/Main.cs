@@ -22,5 +22,11 @@ namespace DVLD_Project
             Form frm = new frmListPeople();
             frm.ShowDialog();
         }
+
+        private void usersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new frmListUsers();
+            frm.ShowDialog();
+        }
     }
 }
