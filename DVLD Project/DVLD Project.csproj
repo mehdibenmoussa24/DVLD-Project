@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application Types\frmListApplicationTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application Types\frmListApplicationTypes.Designer.cs">
+      <DependentUpon>frmListApplicationTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Application Types\frmEditApplicationType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application Types\frmEditApplicationType.Designer.cs">
+      <DependentUpon>frmEditApplicationType.cs</DependentUpon>
+    </Compile>
     <Compile Include="User\frmChangePassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +134,12 @@
     <Compile Include="User\Controls\ctrlUserCard.Designer.cs">
       <DependentUpon>ctrlUserCard.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Application Types\frmListApplicationTypes.resx">
+      <DependentUpon>frmListApplicationTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application Types\frmEditApplicationType.resx">
+      <DependentUpon>frmEditApplicationType.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User\frmAddUpdateUser.resx">
       <DependentUpon>frmAddUpdateUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -279,6 +297,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Users-ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fees.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Title %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ApplicationTypes.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
