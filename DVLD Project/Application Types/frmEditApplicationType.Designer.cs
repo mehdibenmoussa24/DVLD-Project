@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEditApplicationType));
             this.label7 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.lblApplicationTypeID = new System.Windows.Forms.Label();
@@ -43,6 +44,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -149,11 +151,12 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Image = global::DVLD_Project.Properties.Resources.Save_icon;
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(318, 260);
+            this.btnSave.ImageIndex = 0;
+            this.btnSave.ImageList = this.imageList1;
+            this.btnSave.Location = new System.Drawing.Point(310, 260);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(154, 45);
+            this.btnSave.Size = new System.Drawing.Size(162, 45);
             this.btnSave.TabIndex = 107;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -165,11 +168,12 @@
             this.Close.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Close.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Close.Image = global::DVLD_Project.Properties.Resources.stop;
             this.Close.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Close.Location = new System.Drawing.Point(149, 260);
+            this.Close.ImageIndex = 1;
+            this.Close.ImageList = this.imageList1;
+            this.Close.Location = new System.Drawing.Point(136, 260);
             this.Close.Name = "Close";
-            this.Close.Size = new System.Drawing.Size(152, 45);
+            this.Close.Size = new System.Drawing.Size(160, 45);
             this.Close.TabIndex = 106;
             this.Close.Text = "Close";
             this.Close.UseVisualStyleBackColor = false;
@@ -205,10 +209,17 @@
             this.pictureBox8.TabIndex = 67;
             this.pictureBox8.TabStop = false;
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "Save-icon.png");
+            this.imageList1.Images.SetKeyName(1, "stop.png");
+            // 
             // frmEditApplicationType
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(484, 332);
             this.Controls.Add(this.btnSave);
@@ -252,5 +263,6 @@
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button Close;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }

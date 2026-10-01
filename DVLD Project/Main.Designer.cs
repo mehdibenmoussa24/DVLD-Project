@@ -32,6 +32,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.applicationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manageApplicationTypesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.peopleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -50,7 +51,7 @@
             this.usersToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(2100, 53);
+            this.menuStrip1.Size = new System.Drawing.Size(1924, 53);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -72,18 +73,29 @@
             this.pictureBox1.Image = global::DVLD_Project.Properties.Resources.Background2;
             this.pictureBox1.Location = new System.Drawing.Point(0, 53);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(2100, 1128);
+            this.pictureBox1.Size = new System.Drawing.Size(1924, 1122);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
             // applicationsToolStripMenuItem
             // 
+            this.applicationsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.manageApplicationTypesToolStripMenuItem});
             this.applicationsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.applicationsToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.Applications;
             this.applicationsToolStripMenuItem.Name = "applicationsToolStripMenuItem";
             this.applicationsToolStripMenuItem.Size = new System.Drawing.Size(261, 49);
             this.applicationsToolStripMenuItem.Text = "Applications";
+            // 
+            // manageApplicationTypesToolStripMenuItem
+            // 
+            this.manageApplicationTypesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manageApplicationTypesToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.ApplicationTypes;
+            this.manageApplicationTypesToolStripMenuItem.Name = "manageApplicationTypesToolStripMenuItem";
+            this.manageApplicationTypesToolStripMenuItem.Size = new System.Drawing.Size(467, 42);
+            this.manageApplicationTypesToolStripMenuItem.Text = "Manage Application Types";
+            this.manageApplicationTypesToolStripMenuItem.Click += new System.EventHandler(this.manageApplicationTypesToolStripMenuItem_Click);
             // 
             // peopleToolStripMenuItem
             // 
@@ -107,7 +119,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2100, 1181);
+            this.ClientSize = new System.Drawing.Size(1924, 1175);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
@@ -132,6 +144,7 @@
         private System.Windows.Forms.ToolStripMenuItem peopleToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ToolStripMenuItem usersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem manageApplicationTypesToolStripMenuItem;
     }
 }
 

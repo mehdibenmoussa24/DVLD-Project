@@ -28,5 +28,11 @@ namespace DVLD_Project
             Form frm = new frmListUsers();
             frm.ShowDialog();
         }
+
+        private void manageApplicationTypesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListApplicationTypes frm = new frmListApplicationTypes();
+            frm.ShowDialog();
+        }
     }
 }

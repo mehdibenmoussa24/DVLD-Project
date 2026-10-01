@@ -52,10 +52,10 @@
     <Compile Include="Application Types\frmListApplicationTypes.Designer.cs">
       <DependentUpon>frmListApplicationTypes.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmEditApplicationType.cs">
+    <Compile Include="Application Types\frmEditApplicationType.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmEditApplicationType.Designer.cs">
+    <Compile Include="Application Types\frmEditApplicationType.Designer.cs">
       <DependentUpon>frmEditApplicationType.cs</DependentUpon>
     </Compile>
     <Compile Include="User\frmChangePassword.cs">
@@ -137,7 +137,7 @@
     <EmbeddedResource Include="Application Types\frmListApplicationTypes.resx">
       <DependentUpon>frmListApplicationTypes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmEditApplicationType.resx">
+    <EmbeddedResource Include="Application Types\frmEditApplicationType.resx">
       <DependentUpon>frmEditApplicationType.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User\frmAddUpdateUser.resx">
@@ -303,6 +303,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Title %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ApplicationTypes.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

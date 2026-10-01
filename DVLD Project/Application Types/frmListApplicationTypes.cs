@@ -40,5 +40,12 @@ namespace DVLD_Project
             dgvApplicationTypes.Columns[2].HeaderText = "Fees";
             dgvApplicationTypes.Columns[2].Width = 100;
         }
+
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new frmEditApplicationType((int)dgvApplicationTypes.CurrentRow.Cells[0].Value);
+            frm.ShowDialog();
+            frmListApplicationTypes_Load(null, null);
+        }
     }
 }
