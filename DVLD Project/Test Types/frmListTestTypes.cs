@@ -40,5 +40,12 @@ namespace DVLD_Project
             dgvTestTypes.Columns[3].HeaderText = "Fees";
             dgvTestTypes.Columns[3].Width = 100;
         }
+
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmEditTestType frm = new frmEditTestType((TestType.enTestType)dgvTestTypes.CurrentRow.Cells[0].Value);
+            frm.ShowDialog();
+            frmListTestTypes_Load(null, null);
+        }
     }
 }
