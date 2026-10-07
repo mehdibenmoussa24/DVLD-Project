@@ -64,7 +64,7 @@
     <Compile Include="Applications\Local Driving License\frmAddUpdateLocalDrivingLicesnseApplication.Designer.cs">
       <DependentUpon>frmAddUpdateLocalDrivingLicesnseApplication.cs</DependentUpon>
     </Compile>
-    <Compile Include="Format.cs" />
+    <Compile Include="Global Classes\Format.cs" />
     <Compile Include="Test Types\frmEditTestType.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -337,6 +337,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\DrivingLicenseApplication.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DVLD.Business\DVLD.Business.csproj">
+      <Project>{d27b5a02-e88e-4f8c-8b8c-87f6431009a4}</Project>
+      <Name>DVLD.Business</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -2,17 +2,18 @@
 using System.Collections.Generic;
 using System.Data;
 using DVLD.DataAccess;
-using static DVLD.Business.Application;
+using application = DVLD.Business.Application;
 
 namespace DVLD.Business
 {
-    public class LocalDrivingLicenseApplication : Application
+    public class LocalDrivingLicenseApplication : application
     {
         public enum enMode { AddNew = 0, Update = 1 };
         public enMode Mode = enMode.AddNew;
 
         public int LocalDrivingLicenseApplicationID { set; get; }
         public int LicenseClassID { set; get; }
+        public LicenseClass LicenseClassInfo;
         public string PersonFullName
         {
             get
@@ -49,6 +50,7 @@ namespace DVLD.Business
             this.PaidFees = PaidFees;
             this.CreatedByUserID = CreatedByUserID;
             this.LicenseClassID = LicenseClassID;
+            this.LicenseClassInfo = LicenseClass.Find(LicenseClassID);
             Mode = enMode.Update;
         }
 
@@ -85,7 +87,7 @@ namespace DVLD.Business
             if (IsFound)
             {
                 //now we find the base application
-                Application Application = Application.FindBaseApplication(ApplicationID);
+                application Application = application.FindBaseApplication(ApplicationID);
 
                 //we return new object of that person with the right data
                 return new LocalDrivingLicenseApplication(
@@ -113,7 +115,7 @@ namespace DVLD.Business
             if (IsFound)
             {
                 //now we find the base application
-                Application Application = Application.FindBaseApplication(ApplicationID);
+                application Application = application.FindBaseApplication(ApplicationID);
 
                 //we return new object of that person with the right data
                 return new LocalDrivingLicenseApplication(
@@ -134,7 +136,7 @@ namespace DVLD.Business
 
             //Because of inheritance first we call the save method in the base class,
             //it will take care of adding all information to the application table.
-            base.Mode = (Application.enMode)Mode;
+            base.Mode = (application.enMode)Mode;
             if (!base.Save())
                 return false;
 
