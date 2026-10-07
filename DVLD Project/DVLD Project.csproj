@@ -228,12 +228,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DVLD.Business\DVLD.Business.csproj">
-      <Project>{d27b5a02-e88e-4f8c-8b8c-87f6431009a4}</Project>
-      <Name>DVLD.Business</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Filter.png" />
   </ItemGroup>
   <ItemGroup>
