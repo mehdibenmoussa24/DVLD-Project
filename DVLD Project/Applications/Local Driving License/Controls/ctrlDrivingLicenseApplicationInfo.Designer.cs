@@ -92,7 +92,7 @@
             this.panel6.ForeColor = System.Drawing.Color.Transparent;
             this.panel6.Location = new System.Drawing.Point(308, 154);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(313, 31);
+            this.panel6.Size = new System.Drawing.Size(394, 31);
             this.panel6.TabIndex = 92;
             // 
             // lblAppliedFor
@@ -102,7 +102,7 @@
             this.lblAppliedFor.ForeColor = System.Drawing.Color.DimGray;
             this.lblAppliedFor.Location = new System.Drawing.Point(3, 1);
             this.lblAppliedFor.Name = "lblAppliedFor";
-            this.lblAppliedFor.Size = new System.Drawing.Size(307, 28);
+            this.lblAppliedFor.Size = new System.Drawing.Size(388, 28);
             this.lblAppliedFor.TabIndex = 13;
             this.lblAppliedFor.Text = "?????";
             // 
