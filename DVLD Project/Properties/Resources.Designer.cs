@@ -243,6 +243,16 @@ namespace DVLD_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap information {
+            get {
+                object obj = ResourceManager.GetObject("information", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LicenseClass {
             get {
                 object obj = ResourceManager.GetObject("LicenseClass", resourceCulture);
@@ -296,6 +306,16 @@ namespace DVLD_Project.Properties {
         internal static System.Drawing.Bitmap Next {
             get {
                 object obj = ResourceManager.GetObject("Next", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PassedTest {
+            get {
+                object obj = ResourceManager.GetObject("PassedTest", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -376,6 +396,16 @@ namespace DVLD_Project.Properties {
         internal static System.Drawing.Bitmap ShowDetails {
             get {
                 object obj = ResourceManager.GetObject("ShowDetails", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Status {
+            get {
+                object obj = ResourceManager.GetObject("Status", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
