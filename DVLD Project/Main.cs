@@ -12,9 +12,11 @@ namespace DVLD_Project
 {
     public partial class Main : Form
     {
-        public Main()
+        frmLogin _frmLogin;
+        public Main(frmLogin frm)
         {
             InitializeComponent();
+            _frmLogin = frm;
         }
 
         private void peopleToolStripMenuItem_Click(object sender, EventArgs e)

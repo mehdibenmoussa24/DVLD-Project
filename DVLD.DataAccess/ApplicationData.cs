@@ -111,7 +111,7 @@ namespace DVLD.DataAccess
 
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    command.Parameters.Add("@ApplicationID", SqlDbType.Int).Value = ApplicationID;
+                    command.Parameters.Add("@ApplicantPersonID", SqlDbType.Int).Value = ApplicantPersonID;
                     command.Parameters.Add("@ApplicationDate", SqlDbType.DateTime).Value = ApplicationDate;
                     command.Parameters.Add("@ApplicationTypeID", SqlDbType.Int).Value = ApplicationTypeID;
                     command.Parameters.Add("@ApplicationStatus", SqlDbType.TinyInt).Value = ApplicationStatus;
