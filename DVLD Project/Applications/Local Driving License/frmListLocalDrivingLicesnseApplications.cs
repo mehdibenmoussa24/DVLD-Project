@@ -191,5 +191,16 @@ namespace DVLD_Project
         {
             this.Close();
         }
+
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int LocalDrivingLicenseApplicationID = (int)dgvLocalDrivingLicenseApplications.CurrentRow.Cells[0].Value;
+
+            frmAddUpdateLocalDrivingLicesnseApplication frm =
+                         new frmAddUpdateLocalDrivingLicesnseApplication(LocalDrivingLicenseApplicationID);
+            frm.ShowDialog();
+
+            frmListLocalDrivingLicesnseApplications_Load(null, null);
+        }
     }
 }

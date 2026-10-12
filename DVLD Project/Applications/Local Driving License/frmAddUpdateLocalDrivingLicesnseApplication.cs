@@ -60,7 +60,7 @@ namespace DVLD_Project
                 cbLicenseClass.SelectedIndex = 2;
                 lblFees.Text = ApplicationType.Find((int)application.enApplicationType.NewDrivingLicense).Fees.ToString();
                 lblApplicationDate.Text = DateTime.Now.ToShortDateString();
-                //lblCreatedByUser.Text = CurrentUser.UserName;
+                lblCreatedByUser.Text = Global.CurrentUser.UserName;
             }
             else
             {
@@ -175,13 +175,13 @@ namespace DVLD_Project
                 return;
             }
 
-            _LocalDrivingLicenseApplication.ApplicantPersonID = ctrlPersonCardWithFilter1.PersonID; ;
+            _LocalDrivingLicenseApplication.ApplicantPersonID = ctrlPersonCardWithFilter1.PersonID;
             _LocalDrivingLicenseApplication.ApplicationDate = DateTime.Now;
             _LocalDrivingLicenseApplication.ApplicationTypeID = 1;
             _LocalDrivingLicenseApplication.ApplicationStatus = application.enApplicationStatus.New;
             _LocalDrivingLicenseApplication.LastStatusDate = DateTime.Now;
             _LocalDrivingLicenseApplication.PaidFees = Convert.ToSingle(lblFees.Text);
-            //_LocalDrivingLicenseApplication.CreatedByUserID = CurrentUser.UserID;
+            _LocalDrivingLicenseApplication.CreatedByUserID = Global.CurrentUser.UserID;
             _LocalDrivingLicenseApplication.LicenseClassID = LicenseClassID;
 
 
