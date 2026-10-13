@@ -184,5 +184,12 @@ namespace DVLD.Business
             return IsBaseApplicationDeleted;
 
         }
+
+        public bool IsThereAnActiveScheduledTest(TestType.enTestType TestTypeID)
+
+        {
+
+            return LocalDrivingLicenseApplicationData.IsThereAnActiveScheduledTest(this.LocalDrivingLicenseApplicationID, (int)TestTypeID);
+        }
     }
 }
