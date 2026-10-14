@@ -91,10 +91,16 @@
     <Compile Include="Applications\Local Driving License\frmListLocalDrivingLicesnseApplications.Designer.cs">
       <DependentUpon>frmListLocalDrivingLicesnseApplications.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmListTestAppointments.cs">
+    <Compile Include="crlScheduleTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="crlScheduleTest.Designer.cs">
+      <DependentUpon>crlScheduleTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test\frmListTestAppointments.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmListTestAppointments.Designer.cs">
+    <Compile Include="Test\frmListTestAppointments.Designer.cs">
       <DependentUpon>frmListTestAppointments.cs</DependentUpon>
     </Compile>
     <Compile Include="Global Classes\Global.cs" />
@@ -105,16 +111,16 @@
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Global Classes\Format.cs" />
-    <Compile Include="Test Types\frmEditTestType.cs">
+    <Compile Include="Test\Test Types\frmEditTestType.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Test Types\frmEditTestType.Designer.cs">
+    <Compile Include="Test\Test Types\frmEditTestType.Designer.cs">
       <DependentUpon>frmEditTestType.cs</DependentUpon>
     </Compile>
-    <Compile Include="Test Types\frmListTestTypes.cs">
+    <Compile Include="Test\Test Types\frmListTestTypes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Test Types\frmListTestTypes.Designer.cs">
+    <Compile Include="Test\Test Types\frmListTestTypes.Designer.cs">
       <DependentUpon>frmListTestTypes.cs</DependentUpon>
     </Compile>
     <Compile Include="User\frmChangePassword.cs">
@@ -214,16 +220,19 @@
     <EmbeddedResource Include="Applications\Local Driving License\frmLocalDrivingLicenseApplicationInfo.resx">
       <DependentUpon>frmLocalDrivingLicenseApplicationInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmListTestAppointments.resx">
+    <EmbeddedResource Include="crlScheduleTest.resx">
+      <DependentUpon>crlScheduleTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test\frmListTestAppointments.resx">
       <DependentUpon>frmListTestAppointments.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Test Types\frmEditTestType.resx">
+    <EmbeddedResource Include="Test\Test Types\frmEditTestType.resx">
       <DependentUpon>frmEditTestType.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Test Types\frmListTestTypes.resx">
+    <EmbeddedResource Include="Test\Test Types\frmListTestTypes.resx">
       <DependentUpon>frmListTestTypes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User\frmAddUpdateUser.resx">
@@ -435,6 +444,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TakeTest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Test\Controls\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

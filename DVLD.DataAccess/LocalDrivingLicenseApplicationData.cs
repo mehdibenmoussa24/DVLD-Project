@@ -272,5 +272,129 @@ namespace DVLD.DataAccess
             return Result;
 
         }
+
+        public static bool DoesAttendTestType(int LocalDrivingLicenseApplicationID, int TestTypeID)
+        {
+            using (SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString))
+            {
+                string query = @" SELECT top 1 Found=1
+                            FROM LocalDrivingLicenseApplications INNER JOIN
+                                 TestAppointments ON LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = TestAppointments.LocalDrivingLicenseApplicationID INNER JOIN
+                                 Tests ON TestAppointments.TestAppointmentID = Tests.TestAppointmentID
+                            WHERE
+                            (LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID) 
+                            AND(TestAppointments.TestTypeID = @TestTypeID)
+                            ORDER BY TestAppointments.TestAppointmentID desc";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.Add("@LocalDrivingLicenseApplicationID", SqlDbType.Int).Value = LocalDrivingLicenseApplicationID;
+                    command.Parameters.Add("@TestTypeID", SqlDbType.Int).Value = TestTypeID;
+
+                    try
+                    {
+                        connection.Open();
+
+                        object result = command.ExecuteScalar();
+
+                        if (result != null)
+                        {
+                           return true;
+                        }
+                    }
+
+                    catch (Exception ex)
+                    {
+                        Logger.LogError("Error: " + ex.Message);
+                    }
+                }
+            }
+            return false;
+
+        }
+
+        public static byte TotalTrialsPerTest(int LocalDrivingLicenseApplicationID, int TestTypeID)
+        {
+            byte TotalTrialsPerTest = 0;
+
+            using (SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString))
+            {
+                string query = @" SELECT TotalTrialsPerTest = count(TestID)
+                            FROM LocalDrivingLicenseApplications INNER JOIN
+                                 TestAppointments ON LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = TestAppointments.LocalDrivingLicenseApplicationID INNER JOIN
+                                 Tests ON TestAppointments.TestAppointmentID = Tests.TestAppointmentID
+                            WHERE
+                            (LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID) 
+                            AND(TestAppointments.TestTypeID = @TestTypeID)
+                       ";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.Add("@LocalDrivingLicenseApplicationID", SqlDbType.Int).Value = LocalDrivingLicenseApplicationID;
+                    command.Parameters.Add("@TestTypeID", SqlDbType.Int).Value = TestTypeID;
+
+                    try
+                    {
+                        connection.Open();
+
+                        object result = command.ExecuteScalar();
+
+                        if (result != null && byte.TryParse(result.ToString(), out byte Trials))
+                        {
+                            TotalTrialsPerTest = Trials;
+                        }
+                    }
+
+                    catch (Exception ex)
+                    {
+                        Logger.LogError("Error: " + ex.Message);
+                    }
+                }
+            }
+            return TotalTrialsPerTest;
+
+        }
+
+        public static bool DoesPassTestType(int LocalDrivingLicenseApplicationID, int TestTypeID)
+
+        {
+            bool Result = false;
+
+            using (SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString))
+            {
+                string query = @" SELECT top 1 TestResult
+                            FROM LocalDrivingLicenseApplications INNER JOIN
+                                 TestAppointments ON LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = TestAppointments.LocalDrivingLicenseApplicationID INNER JOIN
+                                 Tests ON TestAppointments.TestAppointmentID = Tests.TestAppointmentID
+                            WHERE
+                            (LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID) 
+                            AND(TestAppointments.TestTypeID = @TestTypeID)
+                            ORDER BY TestAppointments.TestAppointmentID desc";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.Add("@LocalDrivingLicenseApplicationID", SqlDbType.Int).Value = LocalDrivingLicenseApplicationID;
+                    command.Parameters.Add("@TestTypeID", SqlDbType.Int).Value = TestTypeID;
+
+                    try
+                    {
+                        connection.Open();
+
+                        object result = command.ExecuteScalar();
+
+                        if (result != null && bool.TryParse(result.ToString(), out bool returnedResult))
+                        {
+                            Result = returnedResult;
+                        }
+                    }
+
+                    catch (Exception ex)
+                    {
+                        Logger.LogError("Error: " + ex.Message);
+                    }
+                }
+            }
+            return Result;
+        }
     }
 }

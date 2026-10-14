@@ -185,11 +185,41 @@ namespace DVLD.Business
 
         }
 
+        public static bool IsThereAnActiveScheduledTest(int LocalDrivingLicenseApplicationID, TestType.enTestType TestTypeID)
+
+        {
+
+            return LocalDrivingLicenseApplicationData.IsThereAnActiveScheduledTest(LocalDrivingLicenseApplicationID, (int)TestTypeID);
+        }
+
         public bool IsThereAnActiveScheduledTest(TestType.enTestType TestTypeID)
 
         {
 
             return LocalDrivingLicenseApplicationData.IsThereAnActiveScheduledTest(this.LocalDrivingLicenseApplicationID, (int)TestTypeID);
         }
+
+        public bool DoesAttendTestType(TestType.enTestType TestTypeID)
+        {
+            return LocalDrivingLicenseApplicationData.DoesAttendTestType(this.LocalDrivingLicenseApplicationID, (int)TestTypeID);
+        }
+
+        public byte TotalTrialsPerTest(TestType.enTestType TestTypeID)
+        {
+            return LocalDrivingLicenseApplicationData.TotalTrialsPerTest(this.LocalDrivingLicenseApplicationID, (int)TestTypeID);
+        }
+
+        public static byte TotalTrialsPerTest(int LocalDrivingLicenseApplicationID, TestType.enTestType TestTypeID)
+
+        {
+            return LocalDrivingLicenseApplicationData.TotalTrialsPerTest(LocalDrivingLicenseApplicationID, (int)TestTypeID);
+        }
+
+        public bool DoesPassTestType(TestType.enTestType TestTypeID)
+
+        {
+            return LocalDrivingLicenseApplicationData.DoesPassTestType(this.LocalDrivingLicenseApplicationID, (int)TestTypeID);
+        }
+
     }
 }

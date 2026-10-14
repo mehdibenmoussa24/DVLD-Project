@@ -542,7 +542,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
             this.Name = "ctrlApplicationBasicInfo";
-            this.Size = new System.Drawing.Size(874, 286);
+            this.Size = new System.Drawing.Size(1094, 351);
             this.panel4.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel8.ResumeLayout(false);

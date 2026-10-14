@@ -33,17 +33,17 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvLicenseTestAppointments = new System.Windows.Forms.DataGridView();
+            this.cmsApplications = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.taketestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblRecordsCount = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.ctrlDrivingLicenseApplicationInfo1 = new DVLD_Project.ctrlDrivingLicenseApplicationInfo();
-            this.cmsApplications = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btnAdd = new System.Windows.Forms.Button();
             this.Close = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pbTestTypeImage = new System.Windows.Forms.PictureBox();
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.taketestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLicenseTestAppointments)).BeginInit();
             this.cmsApplications.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -90,6 +90,31 @@
             this.dgvLicenseTestAppointments.Size = new System.Drawing.Size(1019, 238);
             this.dgvLicenseTestAppointments.TabIndex = 94;
             // 
+            // cmsApplications
+            // 
+            this.cmsApplications.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.cmsApplications.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.editToolStripMenuItem,
+            this.taketestToolStripMenuItem});
+            this.cmsApplications.Name = "contextMenuStrip1";
+            this.cmsApplications.Size = new System.Drawing.Size(142, 56);
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.Edit;
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(141, 26);
+            this.editToolStripMenuItem.Text = "&Edit";
+            this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
+            // 
+            // taketestToolStripMenuItem
+            // 
+            this.taketestToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.TakeTest;
+            this.taketestToolStripMenuItem.Name = "taketestToolStripMenuItem";
+            this.taketestToolStripMenuItem.Size = new System.Drawing.Size(141, 26);
+            this.taketestToolStripMenuItem.Text = "Take Test";
+            this.taketestToolStripMenuItem.Click += new System.EventHandler(this.taketestToolStripMenuItem_Click);
+            // 
             // lblRecordsCount
             // 
             this.lblRecordsCount.BackColor = System.Drawing.Color.Transparent;
@@ -129,15 +154,6 @@
             this.ctrlDrivingLicenseApplicationInfo1.Name = "ctrlDrivingLicenseApplicationInfo1";
             this.ctrlDrivingLicenseApplicationInfo1.Size = new System.Drawing.Size(1095, 565);
             this.ctrlDrivingLicenseApplicationInfo1.TabIndex = 32;
-            // 
-            // cmsApplications
-            // 
-            this.cmsApplications.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.cmsApplications.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.editToolStripMenuItem,
-            this.taketestToolStripMenuItem});
-            this.cmsApplications.Name = "contextMenuStrip1";
-            this.cmsApplications.Size = new System.Drawing.Size(215, 84);
             // 
             // btnAdd
             // 
@@ -185,22 +201,6 @@
             this.pbTestTypeImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbTestTypeImage.TabIndex = 30;
             this.pbTestTypeImage.TabStop = false;
-            // 
-            // editToolStripMenuItem
-            // 
-            this.editToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.Edit;
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
-            this.editToolStripMenuItem.Text = "&Edit";
-            this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
-            // 
-            // taketestToolStripMenuItem
-            // 
-            this.taketestToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.TakeTest;
-            this.taketestToolStripMenuItem.Name = "taketestToolStripMenuItem";
-            this.taketestToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
-            this.taketestToolStripMenuItem.Text = "Take Test";
-            this.taketestToolStripMenuItem.Click += new System.EventHandler(this.taketestToolStripMenuItem_Click);
             // 
             // frmListTestAppointments
             // 
