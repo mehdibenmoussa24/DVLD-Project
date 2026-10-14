@@ -35,20 +35,20 @@ namespace DVLD_Project
 
                     case TestType.enTestType.VisionTest:
                         {
-                            pnlTestType.Text = "Vision Test";
+                            lblTestTypeTitle.Text = "Vision Test";
                             pbTestTypeImage.Image = Resources.Vision;
                             break;
                         }
 
                     case TestType.enTestType.WrittenTest:
                         {
-                            pnlTestType.Text = "Written Test";
+                            lblTestTypeTitle.Text = "Written Test";
                             pbTestTypeImage.Image = Resources.Written;
                             break;
                         }
                     case TestType.enTestType.StreetTest:
                         {
-                            pnlTestType.Text = "Street Test";
+                            lblTestTypeTitle.Text = "Street Test";
                             pbTestTypeImage.Image = Resources.Driving;
                             break;
 

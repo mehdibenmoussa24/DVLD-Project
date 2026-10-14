@@ -53,15 +53,15 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lblTilte = new System.Windows.Forms.Label();
+            this.lblTestTypeTitle = new System.Windows.Forms.Label();
             this.pbTestTypeImage = new System.Windows.Forms.PictureBox();
             this.pnlTestType = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.lblDate = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblTestID = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.lblDate = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -76,9 +76,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbTestTypeImage)).BeginInit();
             this.pnlTestType.SuspendLayout();
+            this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel4.SuspendLayout();
-            this.panel9.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -352,17 +352,17 @@
             this.pictureBox2.TabIndex = 119;
             this.pictureBox2.TabStop = false;
             // 
-            // lblTilte
+            // lblTestTypeTitle
             // 
-            this.lblTilte.AutoSize = true;
-            this.lblTilte.BackColor = System.Drawing.Color.Transparent;
-            this.lblTilte.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTilte.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lblTilte.Location = new System.Drawing.Point(41, 2);
-            this.lblTilte.Name = "lblTilte";
-            this.lblTilte.Size = new System.Drawing.Size(120, 32);
-            this.lblTilte.TabIndex = 120;
-            this.lblTilte.Text = "Test Type";
+            this.lblTestTypeTitle.AutoSize = true;
+            this.lblTestTypeTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblTestTypeTitle.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTestTypeTitle.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lblTestTypeTitle.Location = new System.Drawing.Point(41, 2);
+            this.lblTestTypeTitle.Name = "lblTestTypeTitle";
+            this.lblTestTypeTitle.Size = new System.Drawing.Size(120, 32);
+            this.lblTestTypeTitle.TabIndex = 120;
+            this.lblTestTypeTitle.Text = "Test Type";
             // 
             // pbTestTypeImage
             // 
@@ -400,12 +400,33 @@
             this.pnlTestType.Controls.Add(this.label5);
             this.pnlTestType.Controls.Add(this.panel2);
             this.pnlTestType.Controls.Add(this.pictureBox2);
-            this.pnlTestType.Controls.Add(this.lblTilte);
+            this.pnlTestType.Controls.Add(this.lblTestTypeTitle);
             this.pnlTestType.Controls.Add(this.pbTestTypeImage);
             this.pnlTestType.Location = new System.Drawing.Point(3, 3);
             this.pnlTestType.Name = "pnlTestType";
             this.pnlTestType.Size = new System.Drawing.Size(653, 605);
             this.pnlTestType.TabIndex = 141;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel9.Controls.Add(this.lblDate);
+            this.panel9.ForeColor = System.Drawing.Color.Transparent;
+            this.panel9.Location = new System.Drawing.Point(265, 447);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(298, 31);
+            this.panel9.TabIndex = 125;
+            // 
+            // lblDate
+            // 
+            this.lblDate.BackColor = System.Drawing.Color.Transparent;
+            this.lblDate.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.ForeColor = System.Drawing.Color.DimGray;
+            this.lblDate.Location = new System.Drawing.Point(3, 1);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(292, 28);
+            this.lblDate.TabIndex = 11;
+            this.lblDate.Text = "--/--/----";
             // 
             // pictureBox3
             // 
@@ -452,27 +473,6 @@
             this.lblTestID.Text = "Not Taken Yet";
             this.lblTestID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel9.Controls.Add(this.lblDate);
-            this.panel9.ForeColor = System.Drawing.Color.Transparent;
-            this.panel9.Location = new System.Drawing.Point(265, 447);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(298, 31);
-            this.panel9.TabIndex = 125;
-            // 
-            // lblDate
-            // 
-            this.lblDate.BackColor = System.Drawing.Color.Transparent;
-            this.lblDate.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.ForeColor = System.Drawing.Color.DimGray;
-            this.lblDate.Location = new System.Drawing.Point(3, 1);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(292, 28);
-            this.lblDate.TabIndex = 11;
-            this.lblDate.Text = "--/--/----";
-            // 
             // ctrlSecheduledTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -497,9 +497,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbTestTypeImage)).EndInit();
             this.pnlTestType.ResumeLayout(false);
             this.pnlTestType.PerformLayout();
+            this.panel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel4.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -530,7 +530,7 @@
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label lblTilte;
+        private System.Windows.Forms.Label lblTestTypeTitle;
         private System.Windows.Forms.PictureBox pbTestTypeImage;
         private System.Windows.Forms.Panel pnlTestType;
         private System.Windows.Forms.Panel panel9;
