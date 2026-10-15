@@ -79,7 +79,7 @@
             this.label5.ForeColor = System.Drawing.Color.DimGray;
             this.label5.Location = new System.Drawing.Point(119, 621);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 35);
+            this.label5.Size = new System.Drawing.Size(72, 28);
             this.label5.TabIndex = 137;
             this.label5.Text = "Result:";
             // 
@@ -148,6 +148,7 @@
             // rbPass
             // 
             this.rbPass.AutoSize = true;
+            this.rbPass.Checked = true;
             this.rbPass.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbPass.Location = new System.Drawing.Point(231, 624);
             this.rbPass.Name = "rbPass";
@@ -165,7 +166,6 @@
             this.rbFail.Name = "rbFail";
             this.rbFail.Size = new System.Drawing.Size(55, 27);
             this.rbFail.TabIndex = 145;
-            this.rbFail.TabStop = true;
             this.rbFail.Text = "Fail";
             this.rbFail.UseVisualStyleBackColor = true;
             // 
