@@ -353,6 +353,16 @@ namespace DVLD_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Notes {
+            get {
+                object obj = ResourceManager.GetObject("Notes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap PassedTest {
             get {
                 object obj = ResourceManager.GetObject("PassedTest", resourceCulture);
@@ -423,9 +433,29 @@ namespace DVLD_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Result {
+            get {
+                object obj = ResourceManager.GetObject("Result", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Save_icon {
             get {
                 object obj = ResourceManager.GetObject("Save-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ScheduledTest {
+            get {
+                object obj = ResourceManager.GetObject("ScheduledTest", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

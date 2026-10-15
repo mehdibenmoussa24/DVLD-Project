@@ -91,10 +91,16 @@
     <Compile Include="Applications\Local Driving License\frmListLocalDrivingLicesnseApplications.Designer.cs">
       <DependentUpon>frmListLocalDrivingLicesnseApplications.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmScheduleTest.cs">
+    <Compile Include="frmTakeTest.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmScheduleTest.Designer.cs">
+    <Compile Include="frmTakeTest.Designer.cs">
+      <DependentUpon>frmTakeTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test\frmScheduleTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test\frmScheduleTest.Designer.cs">
       <DependentUpon>frmScheduleTest.cs</DependentUpon>
     </Compile>
     <Compile Include="Test\Controls\ctrlSecheduledTest.cs">
@@ -232,7 +238,10 @@
     <EmbeddedResource Include="Applications\Local Driving License\frmLocalDrivingLicenseApplicationInfo.resx">
       <DependentUpon>frmLocalDrivingLicenseApplicationInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmScheduleTest.resx">
+    <EmbeddedResource Include="frmTakeTest.resx">
+      <DependentUpon>frmTakeTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test\frmScheduleTest.resx">
       <DependentUpon>frmScheduleTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Test\Controls\ctrlSecheduledTest.resx">
@@ -463,6 +472,14 @@
   <ItemGroup>
     <None Include="Resources\TakeTest.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Notes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Result.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ScheduledTest.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

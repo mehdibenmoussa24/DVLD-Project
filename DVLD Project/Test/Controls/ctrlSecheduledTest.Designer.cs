@@ -367,7 +367,7 @@
             // pbTestTypeImage
             // 
             this.pbTestTypeImage.BackColor = System.Drawing.Color.Transparent;
-            this.pbTestTypeImage.Image = global::DVLD_Project.Properties.Resources.Vision;
+            this.pbTestTypeImage.Image = global::DVLD_Project.Properties.Resources.ScheduledTest;
             this.pbTestTypeImage.Location = new System.Drawing.Point(258, 56);
             this.pbTestTypeImage.Name = "pbTestTypeImage";
             this.pbTestTypeImage.Size = new System.Drawing.Size(126, 123);

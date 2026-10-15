@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.crlScheduleTest1 = new DVLD_Project.crlScheduleTest();
-            this.Close = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Close = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // crlScheduleTest1
@@ -41,6 +41,15 @@
             this.crlScheduleTest1.Size = new System.Drawing.Size(661, 925);
             this.crlScheduleTest1.TabIndex = 0;
             this.crlScheduleTest1.TestTypeID = DVLD.Business.TestType.enTestType.VisionTest;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel2.ForeColor = System.Drawing.Color.Transparent;
+            this.panel2.Location = new System.Drawing.Point(80, 857);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(500, 1);
+            this.panel2.TabIndex = 122;
             // 
             // Close
             // 
@@ -55,15 +64,6 @@
             this.Close.Text = "Close";
             this.Close.UseVisualStyleBackColor = false;
             this.Close.Click += new System.EventHandler(this.Close_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel2.ForeColor = System.Drawing.Color.Transparent;
-            this.panel2.Location = new System.Drawing.Point(80, 857);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(500, 1);
-            this.panel2.TabIndex = 122;
             // 
             // frmScheduleTest
             // 
