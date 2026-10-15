@@ -221,5 +221,6 @@ namespace DVLD.Business
             return LocalDrivingLicenseApplicationData.DoesPassTestType(this.LocalDrivingLicenseApplicationID, (int)TestTypeID);
         }
 
+       
     }
 }

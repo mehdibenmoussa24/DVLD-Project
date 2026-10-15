@@ -23,7 +23,14 @@ namespace DVLD_Project
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-         MessageBox.Show("Add New Test Appointment functionality is not implemented yet.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            LocalDrivingLicenseApplication localDrivingLicenseApplication = LocalDrivingLicenseApplication.FindByLocalDrivingAppLicenseID(_LocalDrivingLicenseApplicationID);
+
+
+            if (localDrivingLicenseApplication.IsThereAnActiveScheduledTest(_TestType))
+            {
+                MessageBox.Show("Person Already have an active appointment for this test, You cannot add new appointment", "Not allowed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
         }
 
         private void _LoadTestTypeImageAndTitle()
