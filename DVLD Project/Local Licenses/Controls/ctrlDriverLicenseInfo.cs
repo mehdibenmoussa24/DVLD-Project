@@ -18,7 +18,7 @@ namespace DVLD_Project
             InitializeComponent();
         }
 
-        public int LicenseID
+        public int LicenseID 
         {
             get { return _LicenseID; }
         }
