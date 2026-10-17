@@ -39,7 +39,7 @@ namespace DVLD.Business
             this.LicenseID = -1;
             this.ApplicationID = -1;
             this.DriverID = -1;
-            this.LicenseClass = -1;
+            this.LicenseClassID = -1;
             this.IssueDate = DateTime.Now;
             this.ExpirationDate = DateTime.Now;
             this.Notes = "";
