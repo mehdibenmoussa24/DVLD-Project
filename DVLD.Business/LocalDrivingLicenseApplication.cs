@@ -282,5 +282,6 @@ namespace DVLD.Business
             return License.GetActiveLicenseIDByPersonID(this.ApplicantPersonID, this.LicenseClassID);
         }
 
+       
     }
 }
