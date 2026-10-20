@@ -263,7 +263,7 @@ namespace DVLD_Project
             bool PassedWrittenTest = LocalDrivingLicenseApplication.DoesPassTestType(TestType.enTestType.WrittenTest);
             bool PassedStreetTest = LocalDrivingLicenseApplication.DoesPassTestType(TestType.enTestType.StreetTest);
 
-            sechduleTestsToolStripMenuItem.Enabled = (!PassedVisionTest || !PassedWrittenTest || !PassedStreetTest) && (LocalDrivingLicenseApplication.ApplicationStatus == clsApplication.enApplicationStatus.New);
+            sechduleTestsToolStripMenuItem.Enabled = (!PassedVisionTest || !PassedWrittenTest || !PassedStreetTest) && (LocalDrivingLicenseApplication.ApplicationStatus == application.enApplicationStatus.New);
 
             if (sechduleTestsToolStripMenuItem.Enabled)
             {
