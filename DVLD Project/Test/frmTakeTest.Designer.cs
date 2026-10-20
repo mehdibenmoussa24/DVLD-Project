@@ -47,7 +47,7 @@
             // ctrlSecheduledTest1
             // 
             this.ctrlSecheduledTest1.BackColor = System.Drawing.Color.White;
-            this.ctrlSecheduledTest1.Location = new System.Drawing.Point(4, 2);
+            this.ctrlSecheduledTest1.Location = new System.Drawing.Point(4, 0);
             this.ctrlSecheduledTest1.Name = "ctrlSecheduledTest1";
             this.ctrlSecheduledTest1.Size = new System.Drawing.Size(666, 601);
             this.ctrlSecheduledTest1.TabIndex = 0;
@@ -56,7 +56,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
             this.panel2.ForeColor = System.Drawing.Color.Transparent;
-            this.panel2.Location = new System.Drawing.Point(78, 602);
+            this.panel2.Location = new System.Drawing.Point(78, 600);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(500, 1);
             this.panel2.TabIndex = 123;
@@ -79,7 +79,7 @@
             this.label5.ForeColor = System.Drawing.Color.DimGray;
             this.label5.Location = new System.Drawing.Point(119, 621);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 35);
+            this.label5.Size = new System.Drawing.Size(72, 28);
             this.label5.TabIndex = 137;
             this.label5.Text = "Result:";
             // 

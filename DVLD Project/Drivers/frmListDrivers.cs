@@ -2,10 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using DVLD.Business;
 using System.Windows.Forms;
 
 namespace DVLD_Project
@@ -28,7 +25,7 @@ namespace DVLD_Project
         private void frmListDrivers_Load(object sender, EventArgs e)
         {
             cbFilterBy.SelectedIndex = 0;
-            _dtAllDrivers = clsDriver.GetAllDrivers();
+            _dtAllDrivers = Driver.GetAllDrivers();
             dgvDrivers.DataSource = _dtAllDrivers;
             lblRecordsCount.Text = dgvDrivers.Rows.Count.ToString();
             if (dgvDrivers.Rows.Count > 0)

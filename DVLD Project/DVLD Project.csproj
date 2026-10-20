@@ -91,16 +91,22 @@
     <Compile Include="Applications\Local Driving License\frmListLocalDrivingLicesnseApplications.Designer.cs">
       <DependentUpon>frmListLocalDrivingLicesnseApplications.cs</DependentUpon>
     </Compile>
-    <Compile Include="ctrlDriverLicenseInfoWithFilter.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ctrlDriverLicenseInfoWithFilter.Designer.cs">
-      <DependentUpon>ctrlDriverLicenseInfoWithFilter.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmListDrivers.cs">
+    <Compile Include="Local Licenses\frmIssueDriverLicenseFirstTime.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmListDrivers.Designer.cs">
+    <Compile Include="Local Licenses\frmIssueDriverLicenseFirstTime.Designer.cs">
+      <DependentUpon>frmIssueDriverLicenseFirstTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Local Licenses\Controls\ctrlDriverLicenseInfoWithFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Local Licenses\Controls\ctrlDriverLicenseInfoWithFilter.Designer.cs">
+      <DependentUpon>ctrlDriverLicenseInfoWithFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Drivers\frmListDrivers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drivers\frmListDrivers.Designer.cs">
       <DependentUpon>frmListDrivers.cs</DependentUpon>
     </Compile>
     <Compile Include="Local Licenses\Controls\ctrlDriverLicenseInfo.cs">
@@ -256,14 +262,17 @@
     <EmbeddedResource Include="Applications\Local Driving License\frmLocalDrivingLicenseApplicationInfo.resx">
       <DependentUpon>frmLocalDrivingLicenseApplicationInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ctrlDriverLicenseInfoWithFilter.resx">
+    <EmbeddedResource Include="Local Licenses\Controls\ctrlDriverLicenseInfoWithFilter.resx">
       <DependentUpon>ctrlDriverLicenseInfoWithFilter.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmListDrivers.resx">
+    <EmbeddedResource Include="Drivers\frmListDrivers.resx">
       <DependentUpon>frmListDrivers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Local Licenses\Controls\ctrlDriverLicenseInfo.resx">
       <DependentUpon>ctrlDriverLicenseInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Local Licenses\frmIssueDriverLicenseFirstTime.resx">
+      <DependentUpon>frmIssueDriverLicenseFirstTime.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Test\frmTakeTest.resx">
       <DependentUpon>frmTakeTest.cs</DependentUpon>
@@ -512,7 +521,7 @@
     <None Include="Resources\Driver.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Drivers\" />
+    <None Include="Resources\IssueLicense.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ManageDrivers.png" />

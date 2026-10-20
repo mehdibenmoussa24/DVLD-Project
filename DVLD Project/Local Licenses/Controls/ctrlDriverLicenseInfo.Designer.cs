@@ -156,7 +156,7 @@
             this.lbl13.ForeColor = System.Drawing.Color.DimGray;
             this.lbl13.Location = new System.Drawing.Point(72, 154);
             this.lbl13.Name = "lbl13";
-            this.lbl13.Size = new System.Drawing.Size(78, 35);
+            this.lbl13.Size = new System.Drawing.Size(62, 28);
             this.lbl13.TabIndex = 71;
             this.lbl13.Text = "Class:";
             // 
@@ -368,7 +368,7 @@
             this.label16.ForeColor = System.Drawing.Color.DimGray;
             this.label16.Location = new System.Drawing.Point(611, 154);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(124, 35);
+            this.label16.Size = new System.Drawing.Size(99, 28);
             this.label16.TabIndex = 77;
             this.label16.Text = "Is Active: ";
             // 
@@ -380,7 +380,7 @@
             this.label14.ForeColor = System.Drawing.Color.DimGray;
             this.label14.Location = new System.Drawing.Point(611, 244);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(121, 35);
+            this.label14.Size = new System.Drawing.Size(97, 28);
             this.label14.TabIndex = 82;
             this.label14.Text = "Driver ID:";
             // 
@@ -392,7 +392,7 @@
             this.label15.ForeColor = System.Drawing.Color.DimGray;
             this.label15.Location = new System.Drawing.Point(611, 199);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(171, 35);
+            this.label15.Size = new System.Drawing.Size(137, 28);
             this.label15.TabIndex = 83;
             this.label15.Text = "Date Of Birth:";
             // 
@@ -404,7 +404,7 @@
             this.label6.ForeColor = System.Drawing.Color.DimGray;
             this.label6.Location = new System.Drawing.Point(72, 244);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(158, 35);
+            this.label6.Size = new System.Drawing.Size(126, 28);
             this.label6.TabIndex = 69;
             this.label6.Text = "National No:";
             // 
@@ -426,7 +426,7 @@
             this.label5.ForeColor = System.Drawing.Color.DimGray;
             this.label5.Location = new System.Drawing.Point(72, 199);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(138, 35);
+            this.label5.Size = new System.Drawing.Size(110, 28);
             this.label5.TabIndex = 68;
             this.label5.Text = "License ID:";
             // 
@@ -480,7 +480,7 @@
             this.label9.ForeColor = System.Drawing.Color.DimGray;
             this.label9.Location = new System.Drawing.Point(72, 380);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(169, 35);
+            this.label9.Size = new System.Drawing.Size(135, 28);
             this.label9.TabIndex = 95;
             this.label9.Text = "Issue Reason:";
             // 
@@ -492,7 +492,7 @@
             this.label10.ForeColor = System.Drawing.Color.DimGray;
             this.label10.Location = new System.Drawing.Point(72, 335);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(148, 35);
+            this.label10.Size = new System.Drawing.Size(118, 28);
             this.label10.TabIndex = 94;
             this.label10.Text = "Issue Date: ";
             // 
@@ -546,7 +546,7 @@
             this.label13.ForeColor = System.Drawing.Color.DimGray;
             this.label13.Location = new System.Drawing.Point(611, 381);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(89, 35);
+            this.label13.Size = new System.Drawing.Size(71, 28);
             this.label13.TabIndex = 104;
             this.label13.Text = "Notes:";
             // 
@@ -558,7 +558,7 @@
             this.label17.ForeColor = System.Drawing.Color.DimGray;
             this.label17.Location = new System.Drawing.Point(611, 336);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(150, 35);
+            this.label17.Size = new System.Drawing.Size(120, 28);
             this.label17.TabIndex = 103;
             this.label17.Text = "Is Detained:";
             // 
@@ -591,7 +591,7 @@
             this.label19.ForeColor = System.Drawing.Color.DimGray;
             this.label19.Location = new System.Drawing.Point(611, 290);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(194, 35);
+            this.label19.Size = new System.Drawing.Size(155, 28);
             this.label19.TabIndex = 99;
             this.label19.Text = "Expiration Date:";
             // 
@@ -806,7 +806,7 @@
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.label5);
             this.Name = "ctrlDriverLicenseInfo";
-            this.Size = new System.Drawing.Size(1109, 356);
+            this.Size = new System.Drawing.Size(1109, 457);
             this.panel4.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
