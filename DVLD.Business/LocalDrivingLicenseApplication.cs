@@ -281,7 +281,10 @@ namespace DVLD.Business
             //this will get the license id that belongs to this application
             return License.GetActiveLicenseIDByPersonID(this.ApplicantPersonID, this.LicenseClassID);
         }
+        public byte GetPassedTestCount()
+        {
+            return Test.GetPassedTestCount(this.LocalDrivingLicenseApplicationID);
+        }
 
-       
     }
 }

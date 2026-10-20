@@ -136,7 +136,9 @@ namespace DVLD_Project
 
         private void showPersonLicenseHistoryToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not implemented yet.");
+            int PersonID = (int)dgvDrivers.CurrentRow.Cells[1].Value;
+            frmShowPersonLicenseHistory frm = new frmShowPersonLicenseHistory(PersonID);
+            frm.ShowDialog();
         }
     }
 }

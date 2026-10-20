@@ -54,7 +54,7 @@ namespace DVLD_Project
 
         private void _FillLocalDrivingLicenseApplicationInfo()
         {
-            //_LicenseID = _LocalDrivingLicenseApplication;
+            _LicenseID = _LocalDrivingLicenseApplication.GetActiveLicenseID();
 
             //incase there is license enable the show link.
             btnShowLicenseInfo.Enabled = (_LicenseID != -1);
@@ -62,7 +62,7 @@ namespace DVLD_Project
 
             lblLocalDrivingLicenseApplicationID.Text = _LocalDrivingLicenseApplication.LocalDrivingLicenseApplicationID.ToString();
             lblAppliedFor.Text = LicenseClass.Find(_LocalDrivingLicenseApplication.LicenseClassID).ClassName;
-            //lblPassedTests.Text = _LocalDrivingLicenseApplication.GetPassedTestCount().ToString() + "/3";
+            lblPassedTests.Text = _LocalDrivingLicenseApplication.GetPassedTestCount().ToString() + "/3";
             ctrlApplicationBasicInfo1.LoadApplicationInfo(_LocalDrivingLicenseApplication.ApplicationID);
 
         }
@@ -79,7 +79,8 @@ namespace DVLD_Project
 
         private void btnEditPersonInfo_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Edit Person Info functionality is not implemented yet.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            frmShowLicenseInfo frm = new frmShowLicenseInfo(_LocalDrivingLicenseApplication.GetActiveLicenseID());
+            frm.ShowDialog();
         }
     }
 }
