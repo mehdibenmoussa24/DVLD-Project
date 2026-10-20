@@ -556,5 +556,11 @@
   <ItemGroup>
     <None Include="Resources\History.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AccountSettings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -39,14 +39,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.dgvDrivers = new System.Windows.Forms.DataGridView();
             this.cmsDrivers = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.Close = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.issueInternationalLicenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.showPersonLicenseHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Close = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDrivers)).BeginInit();
             this.cmsDrivers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -66,7 +65,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label1.Location = new System.Drawing.Point(15, 191);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1442, 59);
+            this.label1.Size = new System.Drawing.Size(1364, 59);
             this.label1.TabIndex = 39;
             this.label1.Text = "Manage Drivers";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -153,7 +152,7 @@
             this.dgvDrivers.ReadOnly = true;
             this.dgvDrivers.RowHeadersWidth = 51;
             this.dgvDrivers.RowTemplate.Height = 24;
-            this.dgvDrivers.Size = new System.Drawing.Size(1442, 452);
+            this.dgvDrivers.Size = new System.Drawing.Size(1337, 452);
             this.dgvDrivers.TabIndex = 40;
             // 
             // cmsDrivers
@@ -166,53 +165,7 @@
             this.toolStripSeparator4,
             this.showPersonLicenseHistoryToolStripMenuItem});
             this.cmsDrivers.Name = "contextMenuStrip1";
-            this.cmsDrivers.Size = new System.Drawing.Size(269, 122);
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(265, 6);
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(265, 6);
-            // 
-            // Close
-            // 
-            this.Close.BackColor = System.Drawing.Color.White;
-            this.Close.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Close.Image = global::DVLD_Project.Properties.Resources.stop;
-            this.Close.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Close.Location = new System.Drawing.Point(1286, 815);
-            this.Close.Name = "Close";
-            this.Close.Size = new System.Drawing.Size(171, 51);
-            this.Close.TabIndex = 47;
-            this.Close.Text = "Close";
-            this.Close.UseVisualStyleBackColor = false;
-            this.Close.Click += new System.EventHandler(this.Close_Click);
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
-            this.btnAdd.ImageIndex = 1;
-            this.btnAdd.ImageList = this.imageList1;
-            this.btnAdd.Location = new System.Drawing.Point(1375, 270);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(82, 78);
-            this.btnAdd.TabIndex = 44;
-            this.btnAdd.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::DVLD_Project.Properties.Resources.ManageDrivers;
-            this.pictureBox1.Location = new System.Drawing.Point(642, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(177, 176);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 38;
-            this.pictureBox1.TabStop = false;
+            this.cmsDrivers.Size = new System.Drawing.Size(269, 94);
             // 
             // toolStripMenuItem2
             // 
@@ -221,6 +174,11 @@
             this.toolStripMenuItem2.Size = new System.Drawing.Size(268, 26);
             this.toolStripMenuItem2.Text = "&Show Person Info";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(265, 6);
             // 
             // issueInternationalLicenseToolStripMenuItem
             // 
@@ -231,6 +189,11 @@
             this.issueInternationalLicenseToolStripMenuItem.Text = "Issue International License";
             this.issueInternationalLicenseToolStripMenuItem.Click += new System.EventHandler(this.issueInternationalLicenseToolStripMenuItem_Click);
             // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(265, 6);
+            // 
             // showPersonLicenseHistoryToolStripMenuItem
             // 
             this.showPersonLicenseHistoryToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.History;
@@ -239,14 +202,38 @@
             this.showPersonLicenseHistoryToolStripMenuItem.Text = "Show Person License History";
             this.showPersonLicenseHistoryToolStripMenuItem.Click += new System.EventHandler(this.showPersonLicenseHistoryToolStripMenuItem_Click);
             // 
+            // Close
+            // 
+            this.Close.BackColor = System.Drawing.Color.White;
+            this.Close.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Close.Image = global::DVLD_Project.Properties.Resources.stop;
+            this.Close.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Close.Location = new System.Drawing.Point(1181, 815);
+            this.Close.Name = "Close";
+            this.Close.Size = new System.Drawing.Size(171, 51);
+            this.Close.TabIndex = 47;
+            this.Close.Text = "Close";
+            this.Close.UseVisualStyleBackColor = false;
+            this.Close.Click += new System.EventHandler(this.Close_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::DVLD_Project.Properties.Resources.ManageDrivers;
+            this.pictureBox1.Location = new System.Drawing.Point(616, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(177, 176);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 38;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmListDrivers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1486, 880);
+            this.ClientSize = new System.Drawing.Size(1379, 880);
             this.Controls.Add(this.Close);
-            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtFilterValue);
             this.Controls.Add(this.cbFilterBy);
@@ -271,7 +258,6 @@
         #endregion
 
         private System.Windows.Forms.Button Close;
-        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtFilterValue;
