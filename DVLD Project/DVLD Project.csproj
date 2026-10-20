@@ -97,6 +97,12 @@
     <Compile Include="ctrlDriverLicenseInfoWithFilter.Designer.cs">
       <DependentUpon>ctrlDriverLicenseInfoWithFilter.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmListDrivers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListDrivers.Designer.cs">
+      <DependentUpon>frmListDrivers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Local Licenses\Controls\ctrlDriverLicenseInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -252,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ctrlDriverLicenseInfoWithFilter.resx">
       <DependentUpon>ctrlDriverLicenseInfoWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListDrivers.resx">
+      <DependentUpon>frmListDrivers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Local Licenses\Controls\ctrlDriverLicenseInfo.resx">
       <DependentUpon>ctrlDriverLicenseInfo.cs</DependentUpon>
@@ -501,6 +510,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Driver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Drivers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ManageDrivers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\History.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
