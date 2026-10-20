@@ -170,8 +170,8 @@ namespace DVLD_Project
 
             int LocalDrivingLicenseApplicationID = (int)dgvLocalDrivingLicenseApplications.CurrentRow.Cells[0].Value;
 
-                 LocalDrivingLicenseApplication LocalDrivingLicenseApplication =
-                LocalDrivingLicenseApplication.FindByLocalDrivingAppLicenseID(LocalDrivingLicenseApplicationID);
+            LocalDrivingLicenseApplication LocalDrivingLicenseApplication =
+           LocalDrivingLicenseApplication.FindByLocalDrivingAppLicenseID(LocalDrivingLicenseApplicationID);
 
             if (LocalDrivingLicenseApplication != null)
             {
@@ -276,5 +276,6 @@ namespace DVLD_Project
                 //To Allow Schdule steet test, Person must pass the vision * written tests, and must not passed the same test before.
                 scheduleStreetTestToolStripMenuItem.Enabled = PassedVisionTest && PassedWrittenTest && !PassedStreetTest;
             }
+        }
     }
 }
