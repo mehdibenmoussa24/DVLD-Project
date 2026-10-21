@@ -54,5 +54,30 @@ namespace DVLD_Project
             frmListLocalDrivingLicesnseApplications frm = new frmListLocalDrivingLicesnseApplications();
             frm.ShowDialog();
         }
+
+        private void driversToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListDrivers frm = new frmListDrivers();
+            frm.ShowDialog();
+        }
+
+        private void accountSettingsToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmUserInfo frm = new frmUserInfo(Global.CurrentUser.UserID);
+            frm.ShowDialog();
+        }
+
+        private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmChangePassword frm = new frmChangePassword(Global.CurrentUser.UserID);
+            frm.ShowDialog();
+        }
+
+        private void signOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Global.CurrentUser = null;
+            _frmLogin.Show();
+            this.Close();
+        }
     }
 }
