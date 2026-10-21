@@ -79,5 +79,11 @@ namespace DVLD_Project
             _frmLogin.Show();
             this.Close();
         }
+
+        private void renewDrivingLicenseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRenewLocalDrivingLicenseApplication frm = new frmRenewLocalDrivingLicenseApplication();
+            frm.ShowDialog();
+        }
     }
 }

@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ctrlDriverLicenseInfoWithFilter));
             this.pnlFilters = new System.Windows.Forms.Panel();
             this.btnSearch = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.txtLicenseID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -40,7 +41,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.ctrlDriverLicenseInfo1 = new DVLD_Project.ctrlDriverLicenseInfo();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.pnlFilters.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -65,17 +65,24 @@
             this.btnSearch.BackColor = System.Drawing.Color.Transparent;
             this.btnSearch.ImageIndex = 0;
             this.btnSearch.ImageList = this.imageList1;
-            this.btnSearch.Location = new System.Drawing.Point(503, 75);
+            this.btnSearch.Location = new System.Drawing.Point(536, 75);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(38, 38);
             this.btnSearch.TabIndex = 18;
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "search.png");
+            this.imageList1.Images.SetKeyName(1, "add.png");
+            // 
             // txtLicenseID
             // 
             this.txtLicenseID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtLicenseID.Location = new System.Drawing.Point(143, 80);
+            this.txtLicenseID.Location = new System.Drawing.Point(176, 80);
             this.txtLicenseID.Name = "txtLicenseID";
             this.txtLicenseID.Size = new System.Drawing.Size(337, 26);
             this.txtLicenseID.TabIndex = 17;
@@ -132,9 +139,9 @@
             this.label2.ForeColor = System.Drawing.Color.DimGray;
             this.label2.Location = new System.Drawing.Point(18, 77);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 29);
+            this.label2.Size = new System.Drawing.Size(179, 36);
             this.label2.TabIndex = 16;
-            this.label2.Text = "Filter By";
+            this.label2.Text = "License ID:";
             // 
             // ctrlDriverLicenseInfo1
             // 
@@ -148,13 +155,6 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "search.png");
-            this.imageList1.Images.SetKeyName(1, "add.png");
-            // 
             // ctrlDriverLicenseInfoWithFilter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -163,7 +163,7 @@
             this.Controls.Add(this.ctrlDriverLicenseInfo1);
             this.Controls.Add(this.pnlFilters);
             this.Name = "ctrlDriverLicenseInfoWithFilter";
-            this.Size = new System.Drawing.Size(1420, 586);
+            this.Size = new System.Drawing.Size(1136, 468);
             this.pnlFilters.ResumeLayout(false);
             this.pnlFilters.PerformLayout();
             this.panel2.ResumeLayout(false);

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using DVLD.DataAccess;
+using application = DVLD.Business.Application;
 
 namespace DVLD.Business
 {
@@ -191,6 +192,53 @@ namespace DVLD.Business
                 default:
                     return "First Time";
             }
+        }
+
+        public License RenewLicense(string Notes, int CreatedByUserID)
+        {
+
+            //First Create Applicaiton 
+            application Application = new Application();
+
+            Application.ApplicantPersonID = this.DriverInfo.PersonID;
+            Application.ApplicationDate = DateTime.Now;
+            Application.ApplicationTypeID = (int)application.enApplicationType.RenewDrivingLicense;
+            Application.ApplicationStatus = application.enApplicationStatus.Completed;
+            Application.LastStatusDate = DateTime.Now;
+            Application.PaidFees = ApplicationType.Find((int)application.enApplicationType.RenewDrivingLicense).Fees;
+            Application.CreatedByUserID = CreatedByUserID;
+
+            if (!Application.Save())
+            {
+                return null;
+            }
+
+            License NewLicense = new License();
+
+            NewLicense.ApplicationID = Application.ApplicationID;
+            NewLicense.DriverID = this.DriverID;
+            NewLicense.LicenseClassID = this.LicenseClassID;
+            NewLicense.IssueDate = DateTime.Now;
+
+            int DefaultValidityLength = this.LicenseClassInfo.DefaultValidityLength;
+
+            NewLicense.ExpirationDate = DateTime.Now.AddYears(DefaultValidityLength);
+            NewLicense.Notes = Notes;
+            NewLicense.PaidFees = this.LicenseClassInfo.ClassFees;
+            NewLicense.IsActive = true;
+            NewLicense.IssueReason = License.enIssueReason.Renew;
+            NewLicense.CreatedByUserID = CreatedByUserID;
+
+
+            if (!NewLicense.Save())
+            {
+                return null;
+            }
+
+            //we need to deactivate the old License.
+            DeactivateCurrentLicense();
+
+            return NewLicense;
         }
 
     }

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.ctrlPersonCardWithFilter1 = new DVLD_Project.ctrlPersonCardWithFilter();
-            this.ctrlDriverLicenses1 = new DVLD_Project.ctrlDriverLicenses();
             this.Close = new System.Windows.Forms.Button();
+            this.ctrlDriverLicenses1 = new DVLD_Project.ctrlDriverLicenses();
+            this.ctrlPersonCardWithFilter1 = new DVLD_Project.ctrlPersonCardWithFilter();
             this.SuspendLayout();
             // 
             // label1
@@ -45,25 +45,6 @@
             this.label1.TabIndex = 153;
             this.label1.Text = "Driver License Info";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ctrlPersonCardWithFilter1
-            // 
-            this.ctrlPersonCardWithFilter1.BackColor = System.Drawing.Color.White;
-            this.ctrlPersonCardWithFilter1.FilterEnabled = true;
-            this.ctrlPersonCardWithFilter1.Location = new System.Drawing.Point(8, 64);
-            this.ctrlPersonCardWithFilter1.Name = "ctrlPersonCardWithFilter1";
-            this.ctrlPersonCardWithFilter1.ShowAddPerson = true;
-            this.ctrlPersonCardWithFilter1.Size = new System.Drawing.Size(1399, 549);
-            this.ctrlPersonCardWithFilter1.TabIndex = 154;
-            this.ctrlPersonCardWithFilter1.OnPersonSelected += new System.Action<int>(this.ctrlPersonCardWithFilter1_OnPersonSelected);
-            // 
-            // ctrlDriverLicenses1
-            // 
-            this.ctrlDriverLicenses1.BackColor = System.Drawing.Color.White;
-            this.ctrlDriverLicenses1.Location = new System.Drawing.Point(24, 604);
-            this.ctrlDriverLicenses1.Name = "ctrlDriverLicenses1";
-            this.ctrlDriverLicenses1.Size = new System.Drawing.Size(1176, 420);
-            this.ctrlDriverLicenses1.TabIndex = 155;
             // 
             // Close
             // 
@@ -79,12 +60,31 @@
             this.Close.UseVisualStyleBackColor = false;
             this.Close.Click += new System.EventHandler(this.Close_Click);
             // 
+            // ctrlDriverLicenses1
+            // 
+            this.ctrlDriverLicenses1.BackColor = System.Drawing.Color.White;
+            this.ctrlDriverLicenses1.Location = new System.Drawing.Point(16, 604);
+            this.ctrlDriverLicenses1.Name = "ctrlDriverLicenses1";
+            this.ctrlDriverLicenses1.Size = new System.Drawing.Size(1487, 420);
+            this.ctrlDriverLicenses1.TabIndex = 155;
+            // 
+            // ctrlPersonCardWithFilter1
+            // 
+            this.ctrlPersonCardWithFilter1.BackColor = System.Drawing.Color.White;
+            this.ctrlPersonCardWithFilter1.FilterEnabled = true;
+            this.ctrlPersonCardWithFilter1.Location = new System.Drawing.Point(8, 64);
+            this.ctrlPersonCardWithFilter1.Name = "ctrlPersonCardWithFilter1";
+            this.ctrlPersonCardWithFilter1.ShowAddPerson = true;
+            this.ctrlPersonCardWithFilter1.Size = new System.Drawing.Size(1399, 549);
+            this.ctrlPersonCardWithFilter1.TabIndex = 154;
+            this.ctrlPersonCardWithFilter1.OnPersonSelected += new System.Action<int>(this.ctrlPersonCardWithFilter1_OnPersonSelected);
+            // 
             // frmShowPersonLicenseHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1409, 1101);
+            this.ClientSize = new System.Drawing.Size(1406, 1101);
             this.Controls.Add(this.Close);
             this.Controls.Add(this.ctrlDriverLicenses1);
             this.Controls.Add(this.ctrlPersonCardWithFilter1);
