@@ -241,5 +241,53 @@ namespace DVLD.Business
             return NewLicense;
         }
 
-    }
+        public License Replace(enIssueReason IssueReason, int CreatedByUserID)
+        {
+
+
+            //First Create Applicaiton 
+            application Application = new application();
+
+            Application.ApplicantPersonID = this.DriverInfo.PersonID;
+            Application.ApplicationDate = DateTime.Now;
+
+            Application.ApplicationTypeID = (IssueReason == enIssueReason.DamagedReplacement) ?
+                (int)application.enApplicationType.ReplaceDamagedDrivingLicense :
+                (int)application.enApplicationType.ReplaceLostDrivingLicense;
+
+            Application.ApplicationStatus = application.enApplicationStatus.Completed;
+            Application.LastStatusDate = DateTime.Now;
+            Application.PaidFees = ApplicationType.Find(Application.ApplicationTypeID).Fees;
+            Application.CreatedByUserID = CreatedByUserID;
+
+            if (!Application.Save())
+            {
+                return null;
+            }
+
+            License NewLicense = new License();
+
+            NewLicense.ApplicationID = Application.ApplicationID;
+            NewLicense.DriverID = this.DriverID;
+            NewLicense.LicenseClassID = this.LicenseClassID;
+            NewLicense.IssueDate = DateTime.Now;
+            NewLicense.ExpirationDate = this.ExpirationDate;
+            NewLicense.Notes = this.Notes;
+            NewLicense.PaidFees = 0;// no fees for the license because it's a replacement.
+            NewLicense.IsActive = true;
+            NewLicense.IssueReason = IssueReason;
+            NewLicense.CreatedByUserID = CreatedByUserID;
+
+
+            if (!NewLicense.Save())
+            {
+                return null;
+            }
+
+            //we need to deactivate the old License.
+            DeactivateCurrentLicense();
+
+            return NewLicense;
+        }
+        }
 }

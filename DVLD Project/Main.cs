@@ -85,5 +85,11 @@ namespace DVLD_Project
             frmRenewLocalDrivingLicenseApplication frm = new frmRenewLocalDrivingLicenseApplication();
             frm.ShowDialog();
         }
+
+        private void replacementForLostOrDamagedLicenseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmReplaceLostOrDamagedLicenseApplication frm = new frmReplaceLostOrDamagedLicenseApplication();
+            frm.ShowDialog();
+        }
     }
 }

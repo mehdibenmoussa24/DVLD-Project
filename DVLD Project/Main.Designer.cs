@@ -34,6 +34,7 @@
             this.oNewDrivingLicenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.localLicenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.renewDrivingLicenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.replacementForLostOrDamagedLicenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageApplicationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.localDrivingLicenseApplicationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageApplicationTypesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -86,7 +87,8 @@
             // 
             this.drivingLicenseServicesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.oNewDrivingLicenseToolStripMenuItem,
-            this.renewDrivingLicenseToolStripMenuItem});
+            this.renewDrivingLicenseToolStripMenuItem,
+            this.replacementForLostOrDamagedLicenseToolStripMenuItem});
             this.drivingLicenseServicesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
             this.drivingLicenseServicesToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.License;
             this.drivingLicenseServicesToolStripMenuItem.Name = "drivingLicenseServicesToolStripMenuItem";
@@ -98,9 +100,9 @@
             this.oNewDrivingLicenseToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.localLicenseToolStripMenuItem});
             this.oNewDrivingLicenseToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
-            this.oNewDrivingLicenseToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.License;
+            this.oNewDrivingLicenseToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.add;
             this.oNewDrivingLicenseToolStripMenuItem.Name = "oNewDrivingLicenseToolStripMenuItem";
-            this.oNewDrivingLicenseToolStripMenuItem.Size = new System.Drawing.Size(410, 42);
+            this.oNewDrivingLicenseToolStripMenuItem.Size = new System.Drawing.Size(600, 42);
             this.oNewDrivingLicenseToolStripMenuItem.Text = "&New Driving License";
             // 
             // localLicenseToolStripMenuItem
@@ -114,11 +116,21 @@
             // 
             // renewDrivingLicenseToolStripMenuItem
             // 
+            this.renewDrivingLicenseToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.renewDrivingLicenseToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.Renew;
             this.renewDrivingLicenseToolStripMenuItem.Name = "renewDrivingLicenseToolStripMenuItem";
-            this.renewDrivingLicenseToolStripMenuItem.Size = new System.Drawing.Size(410, 42);
+            this.renewDrivingLicenseToolStripMenuItem.Size = new System.Drawing.Size(600, 42);
             this.renewDrivingLicenseToolStripMenuItem.Text = "&Renew Driving License";
             this.renewDrivingLicenseToolStripMenuItem.Click += new System.EventHandler(this.renewDrivingLicenseToolStripMenuItem_Click);
+            // 
+            // replacementForLostOrDamagedLicenseToolStripMenuItem
+            // 
+            this.replacementForLostOrDamagedLicenseToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.replacementForLostOrDamagedLicenseToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.Replace;
+            this.replacementForLostOrDamagedLicenseToolStripMenuItem.Name = "replacementForLostOrDamagedLicenseToolStripMenuItem";
+            this.replacementForLostOrDamagedLicenseToolStripMenuItem.Size = new System.Drawing.Size(600, 42);
+            this.replacementForLostOrDamagedLicenseToolStripMenuItem.Text = "Replacement for Lost or &Damaged License";
+            this.replacementForLostOrDamagedLicenseToolStripMenuItem.Click += new System.EventHandler(this.replacementForLostOrDamagedLicenseToolStripMenuItem_Click);
             // 
             // manageApplicationsToolStripMenuItem
             // 
@@ -287,6 +299,7 @@
         private System.Windows.Forms.ToolStripMenuItem changePasswordToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem signOutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem renewDrivingLicenseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem replacementForLostOrDamagedLicenseToolStripMenuItem;
     }
 }
 
