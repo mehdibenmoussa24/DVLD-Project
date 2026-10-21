@@ -103,6 +103,12 @@
     <Compile Include="Applications\ReplaceLostOrDamagedLicense\frmReplaceLostOrDamagedLicenseApplication.Designer.cs">
       <DependentUpon>frmReplaceLostOrDamagedLicenseApplication.cs</DependentUpon>
     </Compile>
+    <Compile Include="Licenses\Detain License\frmDetainLicenseApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licenses\Detain License\frmDetainLicenseApplication.Designer.cs">
+      <DependentUpon>frmDetainLicenseApplication.cs</DependentUpon>
+    </Compile>
     <Compile Include="Licenses\Controls\ctrlDriverLicenses.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -300,6 +306,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Licenses\Controls\ctrlDriverLicenses.resx">
       <DependentUpon>ctrlDriverLicenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licenses\Detain License\frmDetainLicenseApplication.resx">
+      <DependentUpon>frmDetainLicenseApplication.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Licenses\frmShowPersonLicenseHistory.resx">
       <DependentUpon>frmShowPersonLicenseHistory.cs</DependentUpon>
@@ -585,6 +594,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Replace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DetainLicense.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Detain.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

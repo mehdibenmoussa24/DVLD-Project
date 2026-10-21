@@ -33,7 +33,12 @@ namespace DVLD.Business
             }
         }
         public int CreatedByUserID { set; get; }
-       
+
+        public bool IsDetained
+        {
+            get { return DetainedLicense.IsLicenseDetained(this.LicenseID); }
+        }
+
         public License()
 
         {
@@ -289,5 +294,22 @@ namespace DVLD.Business
 
             return NewLicense;
         }
+        public int Detain(float FineFees, int CreatedByUserID)
+        {
+            DetainedLicense detainedLicense = new DetainedLicense();
+            detainedLicense.LicenseID = this.LicenseID;
+            detainedLicense.DetainDate = DateTime.Now;
+            detainedLicense.FineFees = Convert.ToSingle(FineFees);
+            detainedLicense.CreatedByUserID = CreatedByUserID;
+
+            if (!detainedLicense.Save())
+            {
+
+                return -1;
+            }
+
+            return detainedLicense.DetainID;
+
         }
+    }
 }
