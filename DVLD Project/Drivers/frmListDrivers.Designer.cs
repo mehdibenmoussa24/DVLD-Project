@@ -87,16 +87,10 @@
             this.cbFilterBy.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.cbFilterBy.Items.AddRange(new object[] {
             "None",
+            "Driver ID",
             "Person ID",
-            "National No",
-            "First Name",
-            "Second Name",
-            "Third Name",
-            "Last Name",
-            "Nationality",
-            "Gendor",
-            "Phone",
-            "Email"});
+            "National No.",
+            "Full Name"});
             this.cbFilterBy.Location = new System.Drawing.Point(134, 309);
             this.cbFilterBy.Name = "cbFilterBy";
             this.cbFilterBy.Size = new System.Drawing.Size(199, 28);
@@ -147,6 +141,7 @@
             this.dgvDrivers.AllowUserToOrderColumns = true;
             this.dgvDrivers.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.dgvDrivers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDrivers.ContextMenuStrip = this.cmsDrivers;
             this.dgvDrivers.Location = new System.Drawing.Point(15, 354);
             this.dgvDrivers.Name = "dgvDrivers";
             this.dgvDrivers.ReadOnly = true;
