@@ -323,6 +323,16 @@ namespace DVLD_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap International {
+            get {
+                object obj = ResourceManager.GetObject("International", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap InternationalDrivingLicense {
             get {
                 object obj = ResourceManager.GetObject("InternationalDrivingLicense", resourceCulture);

@@ -121,5 +121,23 @@ namespace DVLD_Project
             frmListDetainedLicenses frm = new frmListDetainedLicenses();
             frm.ShowDialog();
         }
+
+        private void internationalLicenseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmNewInternationalLicenseApplication frm = new frmNewInternationalLicenseApplication();
+            frm.ShowDialog();
+        }
+
+        private void internationalLicenseApplicationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListInternationalLicesnseApplications frm = new frmListInternationalLicesnseApplications();
+            frm.ShowDialog();
+        }
+
+        private void Main_Leave(object sender, EventArgs e)
+        {
+            frmLogin frm = new frmLogin();
+            frm.ShowDialog();
+        }
     }
 }

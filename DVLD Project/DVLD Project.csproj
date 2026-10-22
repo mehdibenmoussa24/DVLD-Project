@@ -115,11 +115,17 @@
     <Compile Include="Applications\Rlease Detained License\frmListDetainedLicenses.Designer.cs">
       <DependentUpon>frmListDetainedLicenses.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmNewInternationalLicenseApplication.cs">
+    <Compile Include="Applications\International License\frmNewInternationalLicenseApplication.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmNewInternationalLicenseApplication.Designer.cs">
+    <Compile Include="Applications\International License\frmNewInternationalLicenseApplication.Designer.cs">
       <DependentUpon>frmNewInternationalLicenseApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\International License\frmListInternationalLicesnseApplications.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\International License\frmListInternationalLicesnseApplications.Designer.cs">
+      <DependentUpon>frmListInternationalLicesnseApplications.cs</DependentUpon>
     </Compile>
     <Compile Include="Licenses\International Licenses\frmShowInternationalLicenseInfo.cs">
       <SubType>Form</SubType>
@@ -313,6 +319,9 @@
     <EmbeddedResource Include="Applications\Application Types\frmEditApplicationType.resx">
       <DependentUpon>frmEditApplicationType.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Applications\International License\frmListInternationalLicesnseApplications.resx">
+      <DependentUpon>frmListInternationalLicesnseApplications.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Applications\Local Driving License\Controls\ctrlDrivingLicenseApplicationInfo.resx">
       <DependentUpon>ctrlDrivingLicenseApplicationInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -340,7 +349,7 @@
     <EmbeddedResource Include="Applications\Rlease Detained License\frmReleaseDetainedLicenseApplication.resx">
       <DependentUpon>frmReleaseDetainedLicenseApplication.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmNewInternationalLicenseApplication.resx">
+    <EmbeddedResource Include="Applications\International License\frmNewInternationalLicenseApplication.resx">
       <DependentUpon>frmNewInternationalLicenseApplication.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Licenses\Controls\ctrlDriverLicenses.resx">
@@ -652,8 +661,9 @@
   <ItemGroup>
     <None Include="Resources\Release.png" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Applications\International License\" />
+    <None Include="Resources\International.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
