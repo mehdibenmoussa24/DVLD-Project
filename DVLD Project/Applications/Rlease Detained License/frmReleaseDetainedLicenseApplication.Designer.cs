@@ -444,7 +444,7 @@
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Image = global::DVLD_Project.Properties.Resources.Calendar;
+            this.pictureBox8.Image = global::DVLD_Project.Properties.Resources.ID;
             this.pictureBox8.Location = new System.Drawing.Point(582, 881);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(33, 28);
@@ -454,7 +454,7 @@
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Image = global::DVLD_Project.Properties.Resources.Calendar;
+            this.pictureBox7.Image = global::DVLD_Project.Properties.Resources.Fees;
             this.pictureBox7.Location = new System.Drawing.Point(42, 882);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(33, 28);
@@ -464,7 +464,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::DVLD_Project.Properties.Resources.Calendar;
+            this.pictureBox4.Image = global::DVLD_Project.Properties.Resources.Fees;
             this.pictureBox4.Location = new System.Drawing.Point(42, 837);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(33, 28);
