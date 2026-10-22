@@ -290,7 +290,7 @@ namespace DVLD.DataAccess
 
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    command.Parameters.Add("@DetainedLicenseID", SqlDbType.Int).Value = DetainID;
+                    command.Parameters.Add("@DetainID", SqlDbType.Int).Value = DetainID;
                     command.Parameters.Add("@ReleasedByUserID", SqlDbType.Int).Value = ReleasedByUserID;
                     command.Parameters.Add("@ReleaseApplicationID", SqlDbType.Int).Value = ReleaseApplicationID;
                     command.Parameters.Add("@ReleaseDate", SqlDbType.SmallDateTime).Value = DateTime.Now;
