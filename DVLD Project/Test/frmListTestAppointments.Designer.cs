@@ -97,13 +97,13 @@
             this.editToolStripMenuItem,
             this.taketestToolStripMenuItem});
             this.cmsApplications.Name = "contextMenuStrip1";
-            this.cmsApplications.Size = new System.Drawing.Size(142, 56);
+            this.cmsApplications.Size = new System.Drawing.Size(215, 84);
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.Edit;
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(141, 26);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
             this.editToolStripMenuItem.Text = "&Edit";
             this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
             // 
@@ -111,7 +111,7 @@
             // 
             this.taketestToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.TakeTest;
             this.taketestToolStripMenuItem.Name = "taketestToolStripMenuItem";
-            this.taketestToolStripMenuItem.Size = new System.Drawing.Size(141, 26);
+            this.taketestToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
             this.taketestToolStripMenuItem.Text = "Take Test";
             this.taketestToolStripMenuItem.Click += new System.EventHandler(this.taketestToolStripMenuItem_Click);
             // 

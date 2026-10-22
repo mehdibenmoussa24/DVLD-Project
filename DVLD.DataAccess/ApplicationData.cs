@@ -345,7 +345,7 @@ namespace DVLD.DataAccess
                 {
                     command.Parameters.Add("@ApplicationID", SqlDbType.Int).Value = ApplicationID;
                     command.Parameters.Add("@NewStatus", SqlDbType.TinyInt).Value = NewStatus;
-                    command.Parameters.Add("@LastStatusDate", SqlDbType.Int).Value = DateTime.Now;
+                    command.Parameters.Add("@LastStatusDate", SqlDbType.DateTime).Value = DateTime.Now;
 
                     try
                     {

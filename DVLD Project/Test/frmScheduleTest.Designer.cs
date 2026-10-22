@@ -28,19 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.crlScheduleTest1 = new DVLD_Project.crlScheduleTest();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Close = new System.Windows.Forms.Button();
+            this.crlScheduleTest1 = new DVLD_Project.crlScheduleTest();
             this.SuspendLayout();
-            // 
-            // crlScheduleTest1
-            // 
-            this.crlScheduleTest1.BackColor = System.Drawing.Color.White;
-            this.crlScheduleTest1.Location = new System.Drawing.Point(4, 3);
-            this.crlScheduleTest1.Name = "crlScheduleTest1";
-            this.crlScheduleTest1.Size = new System.Drawing.Size(661, 925);
-            this.crlScheduleTest1.TabIndex = 0;
-            this.crlScheduleTest1.TestTypeID = DVLD.Business.TestType.enTestType.VisionTest;
             // 
             // panel2
             // 
@@ -64,6 +55,15 @@
             this.Close.Text = "Close";
             this.Close.UseVisualStyleBackColor = false;
             this.Close.Click += new System.EventHandler(this.Close_Click);
+            // 
+            // crlScheduleTest1
+            // 
+            this.crlScheduleTest1.BackColor = System.Drawing.Color.White;
+            this.crlScheduleTest1.Location = new System.Drawing.Point(4, 3);
+            this.crlScheduleTest1.Name = "crlScheduleTest1";
+            this.crlScheduleTest1.Size = new System.Drawing.Size(661, 925);
+            this.crlScheduleTest1.TabIndex = 0;
+            this.crlScheduleTest1.TestTypeID = DVLD.Business.TestType.enTestType.VisionTest;
             // 
             // frmScheduleTest
             // 

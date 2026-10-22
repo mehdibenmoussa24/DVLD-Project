@@ -192,6 +192,11 @@ namespace DVLD.Business
             return LocalDrivingLicenseApplicationData.IsThereAnActiveScheduledTest(LocalDrivingLicenseApplicationID, (int)TestTypeID);
         }
 
+        public Test GetLastTestPerTestType(TestType.enTestType TestTypeID)
+        {
+            return Test.FindLastTestPerPersonAndLicenseClass(this.ApplicantPersonID, this.LicenseClassID, TestTypeID);
+        }
+
         public bool IsThereAnActiveScheduledTest(TestType.enTestType TestTypeID)
 
         {
@@ -284,6 +289,11 @@ namespace DVLD.Business
         public byte GetPassedTestCount()
         {
             return Test.GetPassedTestCount(this.LocalDrivingLicenseApplicationID);
+        }
+
+        public bool IsLicenseIssued()
+        {
+            return (GetActiveLicenseID() != -1);
         }
 
     }

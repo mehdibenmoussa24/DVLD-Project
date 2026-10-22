@@ -60,6 +60,7 @@ namespace DVLD_Project
 
         public void LoadInfo(int LocalDrivingLicenseApplicationID, int AppointmentID = -1)
         {
+
             //if no appointment id this means AddNew mode otherwise it's update mode.
             if (AppointmentID == -1)
                 _Mode = enMode.AddNew;

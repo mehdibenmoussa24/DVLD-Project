@@ -238,7 +238,7 @@ namespace DVLD_Project
 
             int TotalPassedTests = (int)dgvLocalDrivingLicenseApplications.CurrentRow.Cells[5].Value;
 
-            bool LicenseExists = false; // Initialize the variable [////////////////////]?
+            bool LicenseExists = LocalDrivingLicenseApplication.IsLicenseIssued();
 
             //Enabled only if person passed all tests and Does not have license. 
             issueDrivingLicenseFirstTimeToolStripMenuItem.Enabled = (TotalPassedTests == 3) && !LicenseExists;

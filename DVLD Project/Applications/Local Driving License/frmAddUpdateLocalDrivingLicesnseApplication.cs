@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using application = DVLD.Business.Application;
+using clsLicense = DVLD.Business.License;
 using System.Windows.Forms;
 
 namespace DVLD_Project
@@ -172,6 +173,14 @@ namespace DVLD_Project
             {
                 MessageBox.Show("Choose another License Class, the selected Person Already have an active application for the selected class with id=" + ActiveApplicationID, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 cbLicenseClass.Focus();
+                return;
+            }
+
+            //check if user already have issued license of the same driving  class.
+            if (clsLicense.IsLicenseExistByPersonID(ctrlPersonCardWithFilter1.PersonID, LicenseClassID))
+            {
+
+                MessageBox.Show("Person already have a license with the same applied driving class, Choose diffrent driving class", "Not allowed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
