@@ -32,6 +32,9 @@ namespace DVLD.Business
                 return GetIssueReasonText(this.IssueReason);
             }
         }
+
+        public DetainedLicense DetainedInfo { set; get; }
+
         public int CreatedByUserID { set; get; }
 
         public bool IsDetained
@@ -309,6 +312,32 @@ namespace DVLD.Business
             }
 
             return detainedLicense.DetainID;
+
+        }
+        public bool ReleaseDetainedLicense(int ReleasedByUserID, ref int ApplicationID)
+        {
+
+            //First Create Applicaiton 
+            application Application = new application();
+
+            Application.ApplicantPersonID = this.DriverInfo.PersonID;
+            Application.ApplicationDate = DateTime.Now;
+            Application.ApplicationTypeID = (int)application.enApplicationType.ReleaseDetainedDrivingLicsense;
+            Application.ApplicationStatus = application.enApplicationStatus.Completed;
+            Application.LastStatusDate = DateTime.Now;
+            Application.PaidFees = ApplicationType.Find((int)application.enApplicationType.ReleaseDetainedDrivingLicsense).Fees;
+            Application.CreatedByUserID = ReleasedByUserID;
+
+            if (!Application.Save())
+            {
+                ApplicationID = -1;
+                return false;
+            }
+
+            ApplicationID = Application.ApplicationID;
+
+
+            return this.DetainedInfo.ReleaseDetainedLicense(ReleasedByUserID, Application.ApplicationID);
 
         }
     }
