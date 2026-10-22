@@ -28,29 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Close = new System.Windows.Forms.Button();
             this.ctrlDriverLicenseInfo1 = new DVLD_Project.ctrlDriverLicenseInfo();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Close = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // Close
-            // 
-            this.Close.BackColor = System.Drawing.Color.White;
-            this.Close.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Close.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Close.Image = global::DVLD_Project.Properties.Resources.stop;
-            this.Close.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Close.Location = new System.Drawing.Point(1135, 657);
-            this.Close.Name = "Close";
-            this.Close.Size = new System.Drawing.Size(176, 51);
-            this.Close.TabIndex = 149;
-            this.Close.Text = "Close";
-            this.Close.UseVisualStyleBackColor = false;
-            this.Close.Click += new System.EventHandler(this.Close_Click);
             // 
             // ctrlDriverLicenseInfo1
             // 
@@ -72,6 +56,15 @@
             this.label1.Text = "Driver License Info";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel2.ForeColor = System.Drawing.Color.Transparent;
+            this.panel2.Location = new System.Drawing.Point(50, 645);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1261, 1);
+            this.panel2.TabIndex = 153;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -83,14 +76,21 @@
             this.pictureBox1.TabIndex = 151;
             this.pictureBox1.TabStop = false;
             // 
-            // panel2
+            // Close
             // 
-            this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel2.ForeColor = System.Drawing.Color.Transparent;
-            this.panel2.Location = new System.Drawing.Point(50, 645);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1261, 1);
-            this.panel2.TabIndex = 153;
+            this.Close.BackColor = System.Drawing.Color.White;
+            this.Close.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Close.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Close.Image = global::DVLD_Project.Properties.Resources.stop;
+            this.Close.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Close.Location = new System.Drawing.Point(1135, 657);
+            this.Close.Name = "Close";
+            this.Close.Size = new System.Drawing.Size(176, 51);
+            this.Close.TabIndex = 149;
+            this.Close.Text = "Close";
+            this.Close.UseVisualStyleBackColor = false;
+            this.Close.Click += new System.EventHandler(this.Close_Click);
             // 
             // frmShowLicenseInfo
             // 

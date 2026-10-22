@@ -115,6 +115,12 @@
     <Compile Include="Applications\Rlease Detained License\frmListDetainedLicenses.Designer.cs">
       <DependentUpon>frmListDetainedLicenses.cs</DependentUpon>
     </Compile>
+    <Compile Include="Licenses\International Licenses\frmShowInternationalLicenseInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licenses\International Licenses\frmShowInternationalLicenseInfo.Designer.cs">
+      <DependentUpon>frmShowInternationalLicenseInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Licenses\International Licenses\Controls\ctrlDriverInternationalLicenseInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -339,6 +345,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Licenses\International Licenses\Controls\ctrlDriverInternationalLicenseInfo.resx">
       <DependentUpon>ctrlDriverInternationalLicenseInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licenses\International Licenses\frmShowInternationalLicenseInfo.resx">
+      <DependentUpon>frmShowInternationalLicenseInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Licenses\Local Licenses\frmShowLicenseInfo.resx">
       <DependentUpon>frmShowLicenseInfo.cs</DependentUpon>
@@ -628,7 +637,9 @@
   <ItemGroup>
     <None Include="Resources\Detain.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\InternationalDrivingLicense.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Release.png" />
   </ItemGroup>
